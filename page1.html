@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body id="page1">
+    <main>
+
+        <section>
+            <h1>DUNGEONS AND MONSTERS</h1>
+            <button id="btn">Attack</button>
+            <h2>0</h2>
+            <p>Begin met aanvallen!</p>
+        </section>
+        
+        <section id="characters">
+            <div>
+                <label for="yourHealth">Your health:</label>
+                <progress id="yourHealth" min="0" max="100" value="100">Health</progress> 
+                <!-- bron van progress https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress -->
+                <img src="images/knight.png" alt="">
+                <img id="knightRed" src="images/knight-red.png" alt="">
+            </div>
+
+            <div>
+                <p id="gg">Gewonnen</p>
+            </div>
+
+            <div id="zomDiv">
+                <label for="zombieHealth" id="enemyLabel">Zombie health:</label>
+                <progress id="zombieHealth" min="0" max="100" value="100">Health</progress> 
+                <img id="zomImg" src="images/zombie.png" alt="">
+                <img id="zombieRed" src="images/zombie-red.png" alt="">
+            </div>
+        </section>
+
+        <section id="frog">
+            <label for="frogHealth">Froggy health:</label>
+            <progress id="frogHealth" min="0" max="100" value="100">Health</progress>
+            <img src="images/frog.png" alt="">
+            <img id="frogRed" src="images/frog-red.png" alt="">
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
